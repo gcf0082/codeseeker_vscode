@@ -1,0 +1,7 @@
+.vs
+node_modules
+out
+dist
+dgmlViewer.html
+dgmlViewer.js
+*.vsix
