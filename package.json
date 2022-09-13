@@ -1,5 +1,5 @@
 {
-	"name": "vscode-callgraph",
+	"name": "codeseeker-vscode",
 	"publisher": "xylab",
 	"displayName": "CallGraph",
 	"description": "CallGraph",
@@ -101,90 +101,21 @@
 					],
 					"description": "危险函数列表"
 				},
-				"dgmlViewer.defaultNodeBackgroundColor": {
+				"codeseeker.remoteCodeViewUrl": {
 					"type": "string",
-					"default": "#D2E5FF",
-					"description": "The color of the nodes of the directed graph. The string should be in rgb format."
+					"items": {
+						"type": "string"
+					},
+					"default":"http://127.0.0.1:9302",
+					"description": "远程查看代码地址"
 				},
-				"dgmlViewer.edgeArrowToType": {
+				"codeseeker.codeseeerServerUrl": {
 					"type": "string",
-					"default": "triangle",
-					"enum": [
-						"chevron",
-						"circle-triangle",
-						"circle",
-						"diamond",
-						"square",
-						"tee",
-						"triangle-backcurve",
-						"triangle-cross",
-						"triangle-tee",
-						"triangle",
-						"vee",
-						"none"
-					],
-					"description": "The default ending of the edges."
-				},
-				"dgmlViewer.nodeShape": {
-					"type": "string",
-					"default": "round-rectangle",
-					"enum": [
-						"barrel",
-						"bottom-round-rectangle",
-						"concave-hexagon",
-						"cut-rectangle",
-						"diamond",
-						"ellipse",
-						"heptagon",
-						"hexagon",
-						"octagon",
-						"pentagon",
-						"rectangle",
-						"rhomboid",
-						"round-diamond",
-						"round-heptagon",
-						"round-hexagon",
-						"round-octagon",
-						"round-pentagon",
-						"round-rectangle",
-						"round-tag",
-						"round-triangle",
-						"star",
-						"tag",
-						"triangle",
-						"vee"
-					],
-					"description": "The shape of the nodes in the directed graph. Notice that 'ellipse','circle','database','box' and 'text' have the label inside the shape, the rest have the label outside the shape."
-				},
-				"dgmlViewer.graphSelectionGuidelineColor": {
-					"type": "string",
-					"default": "blue",
-					"description": "The color of the guidelines used when selecting part of a directed graph. The string should be in rgba format or standard css color names."
-				},
-				"dgmlViewer.graphSelectionGuidelineWidth": {
-					"type": "number",
-					"default": "1",
-					"description": "The width of the guide lines shown when selecting part of a directed graph"
-				},
-				"dgmlViewer.graphSelectionColor": {
-					"type": "string",
-					"default": "red",
-					"description": "The color of the selection rectangle used when selecting part of a directed graph. The string should be in rgba format or standard css color names."
-				},
-				"dgmlViewer.graphSelectionWidth": {
-					"type": "number",
-					"default": "2",
-					"description": "The width of the selection rectangle shown when selecting part of a directed graph"
-				},
-				"dgmlViewer.saveAsFilename": {
-					"type": "string",
-					"default": "DirectedGraph",
-					"description": "The default name used when saving the directed graph as a Png, Jpg, Svg or Json file."
-				},
-				"dgmlViewer.showPopupsOverNodesAndLinks": {
-					"type": "boolean",
-					"default": true,
-					"description": "When the setting is set to true a popup with various information from node or edge will be shown when the mouse pointer hovers over nodes and edges."
+					"items": {
+						"type": "string"
+					},
+					"default":"http://127.0.0.1:9301",
+					"description": "codeseeker服务端地址"
 				}
 			}
 		}
